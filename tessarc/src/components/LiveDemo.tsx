@@ -68,10 +68,10 @@ export function LiveDemo() {
       <div className="max-w-2xl">
         <p className="text-xs font-medium text-foreground/60">Live demo</p>
         <h2 className="mt-3 text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
-          Intent to action, in one calm flow
+          Compare, predict, decide
         </h2>
         <p className="mt-4 text-sm leading-7 text-foreground/60 sm:text-base">
-          A small simulation of MCP-style tool use and direct checkout redirection.
+          A quick simulation: one text in, live comparisons + price timing out.
         </p>
       </div>
 
