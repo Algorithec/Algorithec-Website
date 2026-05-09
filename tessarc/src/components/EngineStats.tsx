@@ -12,21 +12,22 @@ type Stat = {
 
 const stats: Stat[] = [
   {
-    label: "Platforms Compared",
-    value: 6,
-    description: "Unified comparison across major Indian e-commerce retailers.",
+    label: "Industries",
+    value: 8,
+    suffix: "+",
+    description:
+      "Commerce, healthcare, education, finance, mobility, logistics, and public services.",
   },
   {
-    label: "History Window",
-    value: 24,
-    suffix: "mo",
-    description: "Trend-aware signals with seasonality and deal-cycle context.",
+    label: "Deployment Modes",
+    value: 3,
+    description: "API, SDK, and managed platform for enterprises and partners.",
   },
   {
-    label: "Prediction Horizon",
-    value: 14,
-    suffix: "d",
-    description: "Short-term forecasting for buy-now vs wait recommendations.",
+    label: "Flagship Vertical",
+    value: 1,
+    description:
+      "Price predictions, comparisons, and history insights for Indian e-commerce.",
   },
 ];
 

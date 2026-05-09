@@ -99,7 +99,7 @@ function ParticleField() {
 export function Hero() {
   const reduceMotion = useReducedMotion();
   const headline = useTypewriter(
-    "Price intelligence for every purchase.",
+    "Safe decision intelligence, built for the real world.",
     reduceMotion ? 0 : 18
   );
 
@@ -115,7 +115,7 @@ export function Hero() {
         >
           <div className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-background/60 px-3 py-2 text-xs text-foreground/70 backdrop-blur dark:border-white/15">
             <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-            Predictions • Recommendations • Comparisons
+            Models • Agents • Decision Engines • APIs
           </div>
 
           <h1 className="mt-6 text-balance text-4xl font-semibold leading-tight tracking-tight text-foreground sm:text-6xl">
@@ -124,9 +124,10 @@ export function Hero() {
           </h1>
 
           <p className="mt-6 max-w-2xl text-pretty text-base leading-7 text-foreground/65 sm:text-lg">
-            Algorethic helps Indian shoppers compare prices across e-commerce
-            platforms with a single text prompt, track price history, and get
-            signals on when prices are likely to move up or down.
+            Algorethic researches, builds, and commercializes AI systems that
+            help businesses and consumers evaluate options and execute the best
+            outcomes. Flagship product: price predictions, comparisons, and
+            timing insights for Indian e-commerce.
           </p>
 
           <div className="mt-10 flex flex-col gap-3 sm:flex-row">

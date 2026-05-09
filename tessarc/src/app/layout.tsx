@@ -8,7 +8,7 @@ import { Footer } from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Algorethic",
   description:
-    "Price predictions, recommendations, and real-time comparisons across Indian e-commerce.",
+    "Safe decision intelligence across industries—models, agents, and APIs. Flagship: price predictions and comparisons for Indian e-commerce.",
 };
 
 export default function RootLayout({
