@@ -5,28 +5,28 @@ import { useRef } from "react";
 
 const items = [
   {
-    title: "Instant Price Comparison",
-    body: "One text prompt pulls live prices across major Indian e-commerce platforms.",
+    title: "Foundational Models & LLM Systems",
+    body: "Research and development across model capabilities, fine-tuning, and evaluation.",
   },
   {
-    title: "Price Predictions",
-    body: "Forecasts and confidence bands based on historical trends and market signals.",
+    title: "AI Decision Engines",
+    body: "Structured, auditable decision-making for commerce, mobility, logistics, and services.",
   },
   {
-    title: "Personalized Recommendations",
-    body: "Suggest alternatives, better value picks, and timing based on user intent.",
+    title: "Agents & Conversational Assistants",
+    body: "Natural language interfaces and autonomous workflows for enterprise, consumer, and government.",
   },
   {
-    title: "Price History & Alerts",
-    body: "Clean charts, watchlists, and notifications when prices move or hit targets.",
+    title: "APIs, Cloud, and SDKs",
+    body: "Access models and decision systems via developer-friendly tooling and integrations.",
   },
   {
-    title: "Deal & Timing Insights",
-    body: "Explains whether to buy now or wait, and what’s driving the next move.",
+    title: "Safety & Alignment",
+    body: "Frameworks for safe deployment: red-teaming, monitoring, and policy-driven guardrails.",
   },
   {
-    title: "India-First Coverage",
-    body: "Built for Indian catalogs, offers, and seasonality across brands and retailers.",
+    title: "Partnerships & Licensing",
+    body: "Strategic collaborations with industry, academia, and government—built to scale responsibly.",
   },
 ];
 
@@ -37,13 +37,13 @@ export function AlgorithmGrid() {
   return (
     <section className="mx-auto max-w-6xl px-6 py-16 sm:py-20">
       <div className="max-w-2xl">
-        <p className="text-xs font-medium text-foreground/60">Capabilities</p>
+        <p className="text-xs font-medium text-foreground/60">Platform</p>
         <h2 className="mt-3 text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
-          Built for confident buying decisions
+          Built for safe, deployable AI
         </h2>
         <p className="mt-4 text-sm leading-7 text-foreground/60 sm:text-base">
-          Minimal UI, maximum signal: compare, understand history, and predict
-          what happens next.
+          Research-driven systems that can be licensed, integrated, and operated
+          across sectors—with safety and measurement as first-class features.
         </p>
       </div>
 
@@ -85,6 +85,59 @@ export function AlgorithmGrid() {
           </motion.div>
         ))}
       </motion.div>
+
+      <div className="mt-12 rounded-2xl border border-black/10 bg-background/60 p-6 backdrop-blur dark:border-white/15 sm:p-8">
+        <div className="max-w-2xl">
+          <p className="text-xs font-medium text-foreground/60">Industries</p>
+          <h3 className="mt-3 text-lg font-semibold tracking-tight text-foreground sm:text-xl">
+            Designed to transfer across domains
+          </h3>
+          <p className="mt-3 text-sm leading-7 text-foreground/60">
+            Commerce is our flagship. The same platform extends to healthcare,
+            education, finance, mobility, logistics, travel, hospitality, and
+            public services.
+          </p>
+        </div>
+
+        <motion.ul
+          initial="hidden"
+          animate={inView ? "show" : "hidden"}
+          variants={{
+            hidden: {},
+            show: { transition: { staggerChildren: 0.05, delayChildren: 0.05 } },
+          }}
+          className="mt-6 flex flex-wrap gap-2"
+        >
+          {[
+            "E-commerce",
+            "Food Delivery",
+            "Ride-hailing",
+            "Travel",
+            "Hospitality",
+            "Mobility",
+            "Healthcare",
+            "Education",
+            "Finance",
+            "Logistics",
+            "Public Services",
+          ].map((label) => (
+            <motion.li
+              key={label}
+              variants={{
+                hidden: { opacity: 0, y: 6 },
+                show: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { type: "spring", stiffness: 260, damping: 26 },
+                },
+              }}
+              className="rounded-full border border-black/10 bg-background/60 px-3 py-1.5 text-xs text-foreground/70 dark:border-white/15"
+            >
+              {label}
+            </motion.li>
+          ))}
+        </motion.ul>
+      </div>
     </section>
   );
 }

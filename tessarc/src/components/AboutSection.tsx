@@ -4,16 +4,16 @@ import { motion } from "framer-motion";
 
 const values = [
   {
-    title: "Clarity over complexity",
-    body: "Systems that are explainable, testable, and calm under pressure.",
+    title: "Research → product",
+    body: "Fundamental and applied AI research that ships into real deployments.",
   },
   {
-    title: "Trust through transparency",
-    body: "Price history, platform breakdowns, and clear signals—not black-box guesses.",
+    title: "Safety by design",
+    body: "Alignment, evaluation, monitoring, and controls built into every system.",
   },
   {
-    title: "Optimization, not hype",
-    body: "Prediction models tuned to real outcomes: accuracy, timing, and user trust.",
+    title: "Licensable platform",
+    body: "APIs, SDKs, and managed deployments for partners across industries.",
   },
 ];
 
@@ -24,21 +24,23 @@ export function AboutSection() {
         <div className="max-w-xl">
           <p className="text-xs font-medium text-foreground/60">About</p>
           <h1 className="mt-3 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-            Price predictions and recommendations for India
+            Building safe AI systems across industries
           </h1>
           <p className="mt-5 text-sm leading-7 text-foreground/60 sm:text-base">
-            Algorethic helps shoppers make confident purchases with price
-            predictions, personalized recommendations, and a single-text way to
-            compare prices across Indian e-commerce platforms.
+            Algorethic researches, designs, develops, and commercializes AI
+            systems including LLMs and decision engines. We build conversational
+            assistants and autonomous agents, provide model access via APIs and
+            SDKs, and partner with industry, academia, and government to deploy
+            safe and beneficial AI.
           </p>
           <div className="mt-8 rounded-2xl border border-black/10 bg-background/60 p-6 backdrop-blur dark:border-white/15">
             <p className="text-xs font-medium text-foreground/60">
-              What this enables
+              Flagship: price intelligence for India
             </p>
             <ul className="mt-4 space-y-3 text-sm leading-6 text-foreground/70">
-              <li>Price history and trend analysis at a glance</li>
-              <li>Buy now vs wait recommendations with transparent signals</li>
-              <li>One-text price comparisons across multiple platforms</li>
+              <li>One-text comparisons across Indian e-commerce platforms</li>
+              <li>Price history, timing signals, and buy-now vs wait recommendations</li>
+              <li>Recommendations for better value alternatives and best purchase paths</li>
             </ul>
           </div>
         </div>

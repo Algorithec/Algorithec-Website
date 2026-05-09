@@ -17,10 +17,11 @@ export function ContactForm() {
         <div className="max-w-md">
           <p className="text-xs font-medium text-foreground/60">Contact</p>
           <h1 className="mt-3 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-            Let’s build price intelligence
+            Partnerships and deployments
           </h1>
           <p className="mt-4 text-sm leading-7 text-foreground/60 sm:text-base">
-            Partnerships, integrations, or early access—send a note.
+            Licensing, enterprise integrations, research collaborations, and
+            government pilots—send a note.
           </p>
         </div>
 

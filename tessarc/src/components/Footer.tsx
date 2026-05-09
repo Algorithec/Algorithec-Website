@@ -7,7 +7,7 @@ export function Footer() {
         <div className="space-y-1">
           <p className="text-sm font-medium text-foreground">Algorethic</p>
           <p className="text-sm text-foreground/60">
-            Price intelligence for the Indian market.
+            Safe decision intelligence, from research to deployment.
           </p>
         </div>
         <SocialLinks />

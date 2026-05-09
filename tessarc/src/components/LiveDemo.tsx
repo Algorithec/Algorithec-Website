@@ -12,7 +12,10 @@ const lines: Line[] = [
   { role: "user", text: "iPhone 15 (128GB) best price in India?" },
   { role: "algorethic", text: "Recognizing intent… product match + storage + color." },
   { role: "algorethic", text: "Checking Amazon, Flipkart, Croma, Reliance Digital… comparing offers." },
-  { role: "algorethic", text: "Best price found. Price history suggests a likely drop during the next sale window." },
+  {
+    role: "algorethic",
+    text: "Best price found. Price history suggests a likely drop during the next sale window.",
+  },
 ];
 
 function useTypedLines(all: Line[], start: boolean) {
@@ -66,12 +69,16 @@ export function LiveDemo() {
   return (
     <section className="mx-auto max-w-6xl px-6 py-16 sm:py-20">
       <div className="max-w-2xl">
-        <p className="text-xs font-medium text-foreground/60">Live demo</p>
+        <p className="text-xs font-medium text-foreground/60">
+          Live demo (flagship: commerce)
+        </p>
         <h2 className="mt-3 text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
           Compare, predict, decide
         </h2>
         <p className="mt-4 text-sm leading-7 text-foreground/60 sm:text-base">
-          A quick simulation: one text in, live comparisons + price timing out.
+          One text in, live comparisons + price timing out. The same decision
+          layer scales across mobility, logistics, finance, healthcare, and
+          public services.
         </p>
       </div>
 
