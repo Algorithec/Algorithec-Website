@@ -5,28 +5,28 @@ import { useRef } from "react";
 
 const items = [
   {
-    title: "AI Decision Engine",
-    body: "Deterministic orchestration that turns uncertain signals into confident actions.",
+    title: "Instant Price Comparison",
+    body: "One text prompt pulls live prices across major Indian e-commerce platforms.",
   },
   {
-    title: "RAG Pipelines",
-    body: "Minimal, auditable retrieval with citations and guardrails—optimized for relevance.",
+    title: "Price Predictions",
+    body: "Forecasts and confidence bands based on historical trends and market signals.",
   },
   {
-    title: "MCP Connectivity",
-    body: "Tooling surfaces that connect models to real systems with crisp contracts.",
+    title: "Personalized Recommendations",
+    body: "Suggest alternatives, better value picks, and timing based on user intent.",
   },
   {
-    title: "Direct Checkout Redirection",
-    body: "Intent recognition to action—simulate a purchase flow with structured handoffs.",
+    title: "Price History & Alerts",
+    body: "Clean charts, watchlists, and notifications when prices move or hit targets.",
   },
   {
-    title: "Evaluation Harness",
-    body: "Continuous regression tests for quality, safety, and business metrics.",
+    title: "Deal & Timing Insights",
+    body: "Explains whether to buy now or wait, and what’s driving the next move.",
   },
   {
-    title: "Privacy-First Architecture",
-    body: "Least-privilege access patterns, redaction by default, and secure boundaries.",
+    title: "India-First Coverage",
+    body: "Built for Indian catalogs, offers, and seasonality across brands and retailers.",
   },
 ];
 
@@ -39,11 +39,11 @@ export function AlgorithmGrid() {
       <div className="max-w-2xl">
         <p className="text-xs font-medium text-foreground/60">Capabilities</p>
         <h2 className="mt-3 text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
-          Built for calm, high-signal execution
+          Built for confident buying decisions
         </h2>
         <p className="mt-4 text-sm leading-7 text-foreground/60 sm:text-base">
-          A compact stack that favors clarity over ceremony—optimized for speed,
-          control, and trust.
+          Minimal UI, maximum signal: compare, understand history, and predict
+          what happens next.
         </p>
       </div>
 

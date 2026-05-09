@@ -8,12 +8,12 @@ const values = [
     body: "Systems that are explainable, testable, and calm under pressure.",
   },
   {
-    title: "Retrieval you can trust",
-    body: "RAG with citations, guardrails, and measurable quality targets.",
+    title: "Trust through transparency",
+    body: "Price history, platform breakdowns, and clear signals—not black-box guesses.",
   },
   {
     title: "Optimization, not hype",
-    body: "Evaluate, iterate, and ship improvements with business-visible outcomes.",
+    body: "Prediction models tuned to real outcomes: accuracy, timing, and user trust.",
   },
 ];
 
@@ -24,22 +24,21 @@ export function AboutSection() {
         <div className="max-w-xl">
           <p className="text-xs font-medium text-foreground/60">About</p>
           <h1 className="mt-3 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-            A decision engine built on retrieval and rigor
+            Price predictions and recommendations for India
           </h1>
           <p className="mt-5 text-sm leading-7 text-foreground/60 sm:text-base">
-            Tessarc combines an AI Decision Engine with production-grade RAG
-            pipelines. The result is a minimalist interface over complex
-            reasoning: predictable orchestration, constrained context, and
-            measurable outcomes.
+            Algorethic helps shoppers make confident purchases with price
+            predictions, personalized recommendations, and a single-text way to
+            compare prices across Indian e-commerce platforms.
           </p>
           <div className="mt-8 rounded-2xl border border-black/10 bg-background/60 p-6 backdrop-blur dark:border-white/15">
             <p className="text-xs font-medium text-foreground/60">
               What this enables
             </p>
             <ul className="mt-4 space-y-3 text-sm leading-6 text-foreground/70">
-              <li>RAG pipelines with grounding, citations, and eval loops</li>
-              <li>Intent recognition and tool execution through MCP-style surfaces</li>
-              <li>Direct action handoffs (checkout, booking, routing) with audits</li>
+              <li>Price history and trend analysis at a glance</li>
+              <li>Buy now vs wait recommendations with transparent signals</li>
+              <li>One-text price comparisons across multiple platforms</li>
             </ul>
           </div>
         </div>
