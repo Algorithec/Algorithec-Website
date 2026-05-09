@@ -4,15 +4,15 @@ import { motion, useInView, useReducedMotion } from "framer-motion";
 import { useEffect, useMemo, useRef, useState } from "react";
 
 type Line = {
-  role: "user" | "tessarc";
+  role: "user" | "algorethic";
   text: string;
 };
 
 const lines: Line[] = [
-  { role: "user", text: "Find the best flights to Melbourne next week." },
-  { role: "tessarc", text: "Recognizing intent… travel search + budget constraints." },
-  { role: "tessarc", text: "Querying 14 domains… scoring itineraries… optimizing." },
-  { role: "tessarc", text: "Optimization complete. Redirecting to checkout with best options." },
+  { role: "user", text: "iPhone 15 (128GB) best price in India?" },
+  { role: "algorethic", text: "Recognizing intent… product match + storage + color." },
+  { role: "algorethic", text: "Checking Amazon, Flipkart, Croma, Reliance Digital… comparing offers." },
+  { role: "algorethic", text: "Best price found. Price history suggests a likely drop during the next sale window." },
 ];
 
 function useTypedLines(all: Line[], start: boolean) {
@@ -83,7 +83,9 @@ export function LiveDemo() {
         className="mt-10 rounded-2xl border border-black/10 bg-background/60 p-6 backdrop-blur dark:border-white/15 sm:p-8"
       >
         <div className="flex items-center justify-between">
-          <p className="text-xs font-medium text-foreground/60">tessarc://demo</p>
+          <p className="text-xs font-medium text-foreground/60">
+            algorethic://demo
+          </p>
           <div className="flex items-center gap-2">
             <span className="h-2 w-2 rounded-full bg-foreground/20" />
             <span className="h-2 w-2 rounded-full bg-foreground/20" />
@@ -95,9 +97,11 @@ export function LiveDemo() {
           {all.slice(0, Math.min(visible, all.length)).map((l, idx) => (
             <p
               key={`${l.role}-${idx}`}
-              className={l.role === "user" ? "text-foreground/70" : "text-accent"}
+              className={
+                l.role === "user" ? "text-foreground/70" : "text-accent"
+              }
             >
-              {l.role === "user" ? "User: " : "Tessarc: "}
+              {l.role === "user" ? "User: " : "Algorethic: "}
               {l.text}
             </p>
           ))}
@@ -110,7 +114,7 @@ export function LiveDemo() {
                   : "text-accent"
               }
             >
-              {all[visible]?.role === "user" ? "User: " : "Tessarc: "}
+              {all[visible]?.role === "user" ? "User: " : "Algorethic: "}
               {typed}
               <span className="text-foreground/30">▍</span>
             </p>
