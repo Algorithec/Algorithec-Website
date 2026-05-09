@@ -12,20 +12,21 @@ type Stat = {
 
 const stats: Stat[] = [
   {
-    label: "Domains Indexed",
+    label: "Platforms Compared",
+    value: 6,
+    description: "Unified comparison across major Indian e-commerce retailers.",
+  },
+  {
+    label: "History Window",
+    value: 24,
+    suffix: "mo",
+    description: "Trend-aware signals with seasonality and deal-cycle context.",
+  },
+  {
+    label: "Prediction Horizon",
     value: 14,
-    description: "Multi-source retrieval across structured + unstructured data.",
-  },
-  {
-    label: "RAG Latency (p95)",
-    value: 180,
-    suffix: "ms",
-    description: "Fast recall with controlled context windows and caching.",
-  },
-  {
-    label: "Evaluations / Day",
-    value: 1200,
-    description: "Continuous testing for relevance, safety, and correctness.",
+    suffix: "d",
+    description: "Short-term forecasting for buy-now vs wait recommendations.",
   },
 ];
 
