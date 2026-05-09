@@ -99,7 +99,7 @@ function ParticleField() {
 export function Hero() {
   const reduceMotion = useReducedMotion();
   const headline = useTypewriter(
-    "The Intelligence Layer for Every Decision.",
+    "Price intelligence for every purchase.",
     reduceMotion ? 0 : 18
   );
 
@@ -115,7 +115,7 @@ export function Hero() {
         >
           <div className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-background/60 px-3 py-2 text-xs text-foreground/70 backdrop-blur dark:border-white/15">
             <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-            Minimalist Intelligence
+            Predictions • Recommendations • Comparisons
           </div>
 
           <h1 className="mt-6 text-balance text-4xl font-semibold leading-tight tracking-tight text-foreground sm:text-6xl">
@@ -124,9 +124,9 @@ export function Hero() {
           </h1>
 
           <p className="mt-6 max-w-2xl text-pretty text-base leading-7 text-foreground/65 sm:text-lg">
-            Tessarc builds decision systems with RAG-native retrieval, structured
-            orchestration, and evaluation-first optimization—designed to feel
-            calm, fast, and inevitable.
+            Algorethic helps Indian shoppers compare prices across e-commerce
+            platforms with a single text prompt, track price history, and get
+            signals on when prices are likely to move up or down.
           </p>
 
           <div className="mt-10 flex flex-col gap-3 sm:flex-row">
@@ -134,7 +134,7 @@ export function Hero() {
               href="/about"
               className="inline-flex h-11 items-center justify-center rounded-full bg-foreground px-5 text-sm font-medium text-background transition-colors hover:bg-foreground/90"
             >
-              Explore the engine
+              See how it works
             </Link>
             <Link
               href="/contact"
