@@ -11,7 +11,7 @@ type SocialLink = {
 
 const socials: SocialLink[] = [
   {
-    href: "https://github.com/tessarc",
+    href: "https://github.com/algorethic",
     label: "GitHub",
     icon: (
       <svg viewBox="0 0 24 24" aria-hidden="true" className="h-5 w-5">
@@ -23,7 +23,7 @@ const socials: SocialLink[] = [
     ),
   },
   {
-    href: "https://www.linkedin.com/company/tessarc",
+    href: "https://www.linkedin.com/company/algorethic",
     label: "LinkedIn",
     icon: (
       <svg viewBox="0 0 24 24" aria-hidden="true" className="h-5 w-5">
@@ -35,7 +35,7 @@ const socials: SocialLink[] = [
     ),
   },
   {
-    href: "https://x.com/tessarc",
+    href: "https://x.com/algorethic",
     label: "X",
     icon: (
       <svg viewBox="0 0 24 24" aria-hidden="true" className="h-5 w-5">
