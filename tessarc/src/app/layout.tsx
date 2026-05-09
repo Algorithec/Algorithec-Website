@@ -6,8 +6,9 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Tessarc",
-  description: "The intelligence layer for every decision.",
+  title: "Algorethic",
+  description:
+    "Price predictions, recommendations, and real-time comparisons across Indian e-commerce.",
 };
 
 export default function RootLayout({
