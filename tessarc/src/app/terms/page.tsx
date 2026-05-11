@@ -48,36 +48,49 @@ export default function TermsPage() {
   ] as const;
 
   return (
-    <div className="mx-auto w-full max-w-6xl px-6 py-16 sm:py-20">
-      <div className="max-w-2xl">
-        <p className="text-xs font-medium text-foreground/60">Terms and policies</p>
-        <h1 className="mt-3 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-          Algorethic Terms and Policies
-        </h1>
-        <p className="mt-4 text-sm leading-7 text-foreground/60 sm:text-base">
-          These terms and policies govern your access to and use of Algorethic
-          services, products, and websites. If you have questions, contact{" "}
-          <a
-            href="mailto:info@algorithec.com"
-            className="text-foreground underline decoration-black/20 underline-offset-4 hover:decoration-black/40 dark:decoration-white/20 dark:hover:decoration-white/40"
-          >
-            info@algorithec.com
-          </a>
-          .
-        </p>
-      </div>
+    <div className="relative flex flex-1 flex-col">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(90%_80%_at_50%_0%,rgba(43,111,255,0.10),transparent_65%)]"
+      />
 
-      <div className="mt-10 grid gap-4">
-        {sections.map((s) => (
-          <section
-            id={s.id}
-            key={s.id}
-            className="rounded-2xl border border-black/10 bg-background/60 p-6 backdrop-blur dark:border-white/15"
-          >
-            <h2 className="text-sm font-semibold text-foreground">{s.title}</h2>
-            <p className="mt-2 text-sm leading-6 text-foreground/60">{s.body}</p>
-          </section>
-        ))}
+      <div className="mx-auto w-full max-w-6xl px-6 py-16 sm:py-20">
+        <div className="max-w-2xl">
+          <p className="text-xs font-medium text-foreground/60">
+            Terms and policies
+          </p>
+          <h1 className="mt-3 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+            Algorethic Terms and Policies
+          </h1>
+          <p className="mt-4 text-sm leading-7 text-foreground/60 sm:text-base">
+            These terms and policies govern your access to and use of Algorethic
+            services, products, and websites. If you have questions, contact{" "}
+            <a
+              href="mailto:info@algorithec.com"
+              className="text-foreground underline decoration-black/20 underline-offset-4 hover:decoration-black/40 dark:decoration-white/20 dark:hover:decoration-white/40"
+            >
+              info@algorithec.com
+            </a>
+            .
+          </p>
+        </div>
+
+        <div className="mt-10 grid gap-4">
+          {sections.map((s) => (
+            <section
+              id={s.id}
+              key={s.id}
+              className="rounded-2xl border border-black/10 bg-background/70 p-6 backdrop-blur dark:border-white/15 dark:bg-background/40"
+            >
+              <h2 className="text-sm font-semibold text-foreground">
+                {s.title}
+              </h2>
+              <p className="mt-2 text-sm leading-6 text-foreground/60">
+                {s.body}
+              </p>
+            </section>
+          ))}
+        </div>
       </div>
     </div>
   );
