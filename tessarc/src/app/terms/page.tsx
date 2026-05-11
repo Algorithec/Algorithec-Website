@@ -1,15 +1,61 @@
 export default function TermsPage() {
+  const sections = [
+    {
+      id: "privacy-choices",
+      title: "Privacy choices",
+      body: "You can make choices about how certain data is used for personalization and service improvement, subject to applicable law and product configuration.",
+    },
+    {
+      id: "privacy-policy",
+      title: "Privacy policy",
+      body: "This policy describes what data we collect, how we use it, how we share it, and the controls available to you. For questions, contact info@algorithec.com.",
+    },
+    {
+      id: "consumer-health-data-privacy-policy",
+      title: "Consumer health data privacy policy",
+      body: "If and where applicable, we describe additional requirements and protections related to consumer health data and sensitive categories of information.",
+    },
+    {
+      id: "responsible-disclosure-policy",
+      title: "Responsible disclosure policy",
+      body: "If you discover a security issue, report it responsibly and avoid impacting users. Email info@algorithec.com with details and reproduction steps.",
+    },
+    {
+      id: "tos-commercial",
+      title: "Terms of service: Commercial",
+      body: "Commercial use may be governed by a separate agreement, including licensing, SLAs, security terms, and pricing. If you are evaluating an enterprise deployment, contact us.",
+    },
+    {
+      id: "tos-consumer",
+      title: "Terms of service: Consumer",
+      body: "Consumer services are provided as-is and as-available, and outputs should be validated for your use case. Pricing and availability may vary across retailers and over time.",
+    },
+    {
+      id: "usage-policy",
+      title: "Usage policy",
+      body: "You agree not to misuse the services, including attempting to bypass safeguards, violating laws, or using the system to harm others. We may restrict access for policy violations.",
+    },
+    {
+      id: "availability",
+      title: "Availability",
+      body: "We aim for reliable availability but may perform maintenance, experience outages, or change features. Enterprise availability and SLAs may be defined by contract.",
+    },
+    {
+      id: "status",
+      title: "Status",
+      body: "Service status and incident updates may be communicated through official channels. For urgent issues, contact support via info@algorithec.com.",
+    },
+  ] as const;
+
   return (
     <div className="mx-auto w-full max-w-6xl px-6 py-16 sm:py-20">
       <div className="max-w-2xl">
-        <p className="text-xs font-medium text-foreground/60">
-          Terms and Conditions
-        </p>
+        <p className="text-xs font-medium text-foreground/60">Terms and policies</p>
         <h1 className="mt-3 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-          Algorethic Terms and Conditions
+          Algorethic Terms and Policies
         </h1>
         <p className="mt-4 text-sm leading-7 text-foreground/60 sm:text-base">
-          These Terms and Conditions govern your access to and use of Algorethic
+          These terms and policies govern your access to and use of Algorethic
           services, products, and websites. If you have questions, contact{" "}
           <a
             href="mailto:info@algorithec.com"
@@ -22,42 +68,10 @@ export default function TermsPage() {
       </div>
 
       <div className="mt-10 grid gap-4">
-        {[
-          {
-            title: "Acceptance",
-            body: "By accessing or using our services, you agree to these Terms and Conditions.",
-          },
-          {
-            title: "Use of Services",
-            body: "You agree to use the services responsibly and comply with applicable laws and platform policies.",
-          },
-          {
-            title: "AI Outputs",
-            body: "Outputs may be probabilistic and should be validated for your specific use case, especially in high-stakes contexts.",
-          },
-          {
-            title: "Pricing Data & Availability",
-            body: "Price comparisons and predictions may vary based on retailer availability, offers, and data refresh times.",
-          },
-          {
-            title: "Intellectual Property",
-            body: "Algorethic and its licensors retain all rights in the services, models, software, and content, except where explicitly stated.",
-          },
-          {
-            title: "Disclaimer",
-            body: "Services are provided on an as-is and as-available basis, without warranties to the fullest extent permitted by law.",
-          },
-          {
-            title: "Limitation of Liability",
-            body: "To the fullest extent permitted by law, Algorethic will not be liable for indirect, incidental, or consequential damages.",
-          },
-          {
-            title: "Changes",
-            body: "We may update these terms from time to time. Continued use after updates constitutes acceptance of the updated terms.",
-          },
-        ].map((s) => (
+        {sections.map((s) => (
           <section
-            key={s.title}
+            id={s.id}
+            key={s.id}
             className="rounded-2xl border border-black/10 bg-background/60 p-6 backdrop-blur dark:border-white/15"
           >
             <h2 className="text-sm font-semibold text-foreground">{s.title}</h2>

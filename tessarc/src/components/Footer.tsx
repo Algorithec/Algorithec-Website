@@ -1,25 +1,139 @@
 import Link from "next/link";
 import { SocialLinks } from "@/components/SocialLinks";
 
+const footerLinks = {
+  products: [
+    { label: "Biome", href: "/" },
+    { label: "Platform overview", href: "/about" },
+    { label: "Contact", href: "/contact" },
+  ],
+  company: [
+    { label: "Algorethic", href: "/about" },
+    { label: "Careers", href: "/contact" },
+    { label: "Economic Futures", href: "/about" },
+    { label: "Research", href: "/about" },
+    { label: "News", href: "/about" },
+  ],
+  terms: [
+    { label: "Privacy choices", href: "/terms#privacy-choices" },
+    { label: "Privacy policy", href: "/terms#privacy-policy" },
+    {
+      label: "Consumer health data privacy policy",
+      href: "/terms#consumer-health-data-privacy-policy",
+    },
+    {
+      label: "Responsible disclosure policy",
+      href: "/terms#responsible-disclosure-policy",
+    },
+    { label: "Terms of service: Commercial", href: "/terms#tos-commercial" },
+    { label: "Terms of service: Consumer", href: "/terms#tos-consumer" },
+    { label: "Usage policy", href: "/terms#usage-policy" },
+  ],
+  help: [
+    { label: "Availability", href: "/terms#availability" },
+    { label: "Status", href: "/terms#status" },
+    { label: "Support center", href: "/contact" },
+  ],
+} as const;
+
 export function Footer() {
   return (
-    <footer className="border-t border-black/5 bg-background/60 dark:border-white/10">
-      <div className="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-10 sm:flex-row sm:items-center sm:justify-between">
-        <div className="space-y-1">
-          <p className="text-sm font-medium text-foreground">Algorethic</p>
-          <p className="text-sm text-foreground/60">
-            Safe decision intelligence, from research to deployment.
-          </p>
-          <div className="pt-2">
-            <Link
-              href="/terms"
-              className="text-xs text-foreground/60 underline decoration-black/20 underline-offset-4 hover:text-foreground hover:decoration-black/40 dark:decoration-white/20 dark:hover:decoration-white/40"
+    <footer className="border-t border-black/10 bg-foreground text-background">
+      <div className="mx-auto max-w-6xl px-6 py-12">
+        <div className="grid gap-10 md:grid-cols-12">
+          <div className="space-y-3 md:col-span-4">
+            <p className="text-sm font-semibold tracking-tight text-background">
+              Algorethic
+            </p>
+            <p className="text-sm leading-6 text-background/70">
+              Safe decision intelligence, from research to deployment. Flagship
+              product: Biome.
+            </p>
+            <a
+              href="mailto:info@algorithec.com"
+              className="inline-flex text-sm text-background/70 underline decoration-white/20 underline-offset-4 hover:text-background hover:decoration-white/40"
             >
-              Terms and Conditions
-            </Link>
+              info@algorithec.com
+            </a>
+          </div>
+
+          <div className="grid gap-8 sm:grid-cols-2 md:col-span-8 md:grid-cols-4">
+            <div className="space-y-3">
+              <p className="text-xs font-medium text-background/60">Products</p>
+              <ul className="space-y-2">
+                {footerLinks.products.map((l) => (
+                  <li key={l.label}>
+                    <Link
+                      href={l.href}
+                      className="text-sm text-background/70 hover:text-background"
+                    >
+                      {l.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="space-y-3">
+              <p className="text-xs font-medium text-background/60">Company</p>
+              <ul className="space-y-2">
+                {footerLinks.company.map((l) => (
+                  <li key={l.label}>
+                    <Link
+                      href={l.href}
+                      className="text-sm text-background/70 hover:text-background"
+                    >
+                      {l.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="space-y-3">
+              <p className="text-xs font-medium text-background/60">
+                Terms and policies
+              </p>
+              <ul className="space-y-2">
+                {footerLinks.terms.map((l) => (
+                  <li key={l.label}>
+                    <Link
+                      href={l.href}
+                      className="text-sm text-background/70 hover:text-background"
+                    >
+                      {l.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="space-y-3">
+              <p className="text-xs font-medium text-background/60">
+                Help and security
+              </p>
+              <ul className="space-y-2">
+                {footerLinks.help.map((l) => (
+                  <li key={l.label}>
+                    <Link
+                      href={l.href}
+                      className="text-sm text-background/70 hover:text-background"
+                    >
+                      {l.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
-        <SocialLinks />
+
+        <div className="mt-12 flex flex-col gap-6 border-t border-white/10 pt-8 sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-xs text-background/60">
+            © {new Date().getFullYear()} Algorethic. All rights reserved.
+          </p>
+          <SocialLinks />
+        </div>
       </div>
     </footer>
   );
