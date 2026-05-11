@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { SocialLinks } from "@/components/SocialLinks";
 
 export function Footer() {
@@ -9,6 +10,14 @@ export function Footer() {
           <p className="text-sm text-foreground/60">
             Safe decision intelligence, from research to deployment.
           </p>
+          <div className="pt-2">
+            <Link
+              href="/terms"
+              className="text-xs text-foreground/60 underline decoration-black/20 underline-offset-4 hover:text-foreground hover:decoration-black/40 dark:decoration-white/20 dark:hover:decoration-white/40"
+            >
+              Terms and Conditions
+            </Link>
+          </div>
         </div>
         <SocialLinks />
       </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { useState } from "react";
 
 export function ContactForm() {
@@ -32,6 +33,16 @@ export function ContactForm() {
             setSent(true);
           }}
         >
+          <div className="rounded-2xl border border-black/10 bg-background/60 p-4 text-sm text-foreground/70 backdrop-blur dark:border-white/15">
+            Prefer email?{" "}
+            <a
+              className="font-medium text-foreground underline decoration-black/20 underline-offset-4 hover:decoration-black/40 dark:decoration-white/20 dark:hover:decoration-white/40"
+              href="mailto:info@algorithec.com"
+            >
+              info@algorithec.com
+            </a>
+          </div>
+
           <div className="relative">
             <input
               id="name"
@@ -88,6 +99,17 @@ export function ContactForm() {
           >
             Send
           </button>
+
+          <p className="text-xs leading-6 text-foreground/55">
+            By submitting, you agree to our{" "}
+            <Link
+              href="/terms"
+              className="text-foreground underline decoration-black/20 underline-offset-4 hover:decoration-black/40 dark:decoration-white/20 dark:hover:decoration-white/40"
+            >
+              Terms and Conditions
+            </Link>
+            .
+          </p>
 
           {sent && (
             <p className="text-sm text-foreground/60">
