@@ -124,9 +124,11 @@ export function Hero() {
           </h1>
 
           <p className="mt-6 max-w-2xl text-pretty text-base leading-7 text-foreground/65 sm:text-lg">
-            Algorithec builds AI decision engines for commerce and service
-            domains—shopping, food delivery, rides, travel, and hospitality.
-            Current product: Biome.
+            Algorithec builds intelligent decision engines for modern commerce
+            and service platforms. Through our AI product, Biome, we power
+            real-time, context-aware experiences across shopping, food delivery,
+            rides, travel, and hospitality—enabling smarter personalization,
+            recommendations, matching, and operational optimization at scale.
           </p>
 
           <div className="mt-10 flex flex-col gap-3 sm:flex-row">
