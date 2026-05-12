@@ -14,7 +14,7 @@ export function Navbar() {
           href="/"
           className="text-sm font-semibold tracking-tight text-foreground"
         >
-          Algorethic
+          Algorithec
         </Link>
         <nav className="flex items-center gap-1">
           {links.map((link) => (

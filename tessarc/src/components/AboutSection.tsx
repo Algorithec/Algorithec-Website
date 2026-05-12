@@ -27,7 +27,7 @@ export function AboutSection() {
             Building safe AI systems across industries
           </h1>
           <p className="mt-5 text-sm leading-7 text-foreground/60 sm:text-base">
-            Algorethic researches, designs, develops, and commercializes AI
+            Algorithec researches, designs, develops, and commercializes AI
             systems including LLMs and decision engines. We build conversational
             assistants and autonomous agents, provide model access via APIs and
             SDKs, and partner with industry, academia, and government to deploy
@@ -35,12 +35,12 @@ export function AboutSection() {
           </p>
           <div className="mt-8 rounded-2xl border border-black/10 bg-background/60 p-6 backdrop-blur dark:border-white/15">
             <p className="text-xs font-medium text-foreground/60">
-              Flagship: price intelligence for India
+              Current product: Biome
             </p>
             <ul className="mt-4 space-y-3 text-sm leading-6 text-foreground/70">
-              <li>One-text comparisons across Indian e-commerce platforms</li>
-              <li>Price history, timing signals, and buy-now vs wait recommendations</li>
-              <li>Recommendations for better value alternatives and best purchase paths</li>
+              <li>Decision engine for shopping and e-commerce</li>
+              <li>Decision support for food delivery and ride-hailing</li>
+              <li>Decision workflows for travel and hospitality</li>
             </ul>
           </div>
         </div>

@@ -91,7 +91,7 @@ export function LiveDemo() {
       >
         <div className="flex items-center justify-between">
           <p className="text-xs font-medium text-foreground/60">
-            algorethic://demo
+            algorithec://demo
           </p>
           <div className="flex items-center gap-2">
             <span className="h-2 w-2 rounded-full bg-foreground/20" />
@@ -108,7 +108,7 @@ export function LiveDemo() {
                 l.role === "user" ? "text-foreground/70" : "text-accent"
               }
             >
-              {l.role === "user" ? "User: " : "Algorethic: "}
+              {l.role === "user" ? "User: " : "Algorithec: "}
               {l.text}
             </p>
           ))}
@@ -121,7 +121,7 @@ export function LiveDemo() {
                   : "text-accent"
               }
             >
-              {all[visible]?.role === "user" ? "User: " : "Algorethic: "}
+              {all[visible]?.role === "user" ? "User: " : "Algorithec: "}
               {typed}
               <span className="text-foreground/30">▍</span>
             </p>

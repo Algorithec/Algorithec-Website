@@ -6,9 +6,9 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Algorethic",
+  title: "Algorithec",
   description:
-    "Safe decision intelligence across industries—models, agents, and APIs. Flagship: price predictions and comparisons for Indian e-commerce.",
+    "Decision engines for commerce and service domains—shopping, food delivery, rides, travel, and hospitality. Product: Biome.",
 };
 
 export default function RootLayout({
@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${GeistSans.variable} ${GeistMono.variable} h-full antialiased`}
+      className={`${GeistSans.variable} ${GeistMono.variable} h-full antialiased dark`}
     >
       <body className="min-h-full flex flex-col">
         <Navbar />

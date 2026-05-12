@@ -124,10 +124,9 @@ export function Hero() {
           </h1>
 
           <p className="mt-6 max-w-2xl text-pretty text-base leading-7 text-foreground/65 sm:text-lg">
-            Algorethic researches, builds, and commercializes AI systems that
-            help businesses and consumers evaluate options and execute the best
-            outcomes. Flagship product: price predictions, comparisons, and
-            timing insights for Indian e-commerce.
+            Algorithec builds AI decision engines for commerce and service
+            domains—shopping, food delivery, rides, travel, and hospitality.
+            Current product: Biome.
           </p>
 
           <div className="mt-10 flex flex-col gap-3 sm:flex-row">

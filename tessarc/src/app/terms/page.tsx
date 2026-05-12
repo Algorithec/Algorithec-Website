@@ -11,24 +11,9 @@ export default function TermsPage() {
       body: "This policy describes what data we collect, how we use it, how we share it, and the controls available to you. For questions, contact info@algorithec.com.",
     },
     {
-      id: "consumer-health-data-privacy-policy",
-      title: "Consumer health data privacy policy",
-      body: "If and where applicable, we describe additional requirements and protections related to consumer health data and sensitive categories of information.",
-    },
-    {
-      id: "responsible-disclosure-policy",
-      title: "Responsible disclosure policy",
-      body: "If you discover a security issue, report it responsibly and avoid impacting users. Email info@algorithec.com with details and reproduction steps.",
-    },
-    {
-      id: "tos-commercial",
-      title: "Terms of service: Commercial",
-      body: "Commercial use may be governed by a separate agreement, including licensing, SLAs, security terms, and pricing. If you are evaluating an enterprise deployment, contact us.",
-    },
-    {
-      id: "tos-consumer",
-      title: "Terms of service: Consumer",
-      body: "Consumer services are provided as-is and as-available, and outputs should be validated for your use case. Pricing and availability may vary across retailers and over time.",
+      id: "terms-of-service",
+      title: "Terms of service",
+      body: "Use of Algorithec services is subject to applicable law and these policies. Outputs may be probabilistic and should be validated for your use case. Availability, pricing, and feature access may vary by product and agreement.",
     },
     {
       id: "usage-policy",
@@ -60,10 +45,10 @@ export default function TermsPage() {
             Terms and policies
           </p>
           <h1 className="mt-3 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-            Algorethic Terms and Policies
+            Algorithec Terms and Policies
           </h1>
           <p className="mt-4 text-sm leading-7 text-foreground/60 sm:text-base">
-            These terms and policies govern your access to and use of Algorethic
+            These terms and policies govern your access to and use of Algorithec
             services, products, and websites. If you have questions, contact{" "}
             <a
               href="mailto:info@algorithec.com"
