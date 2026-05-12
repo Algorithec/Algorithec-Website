@@ -8,7 +8,7 @@ import { Footer } from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Algorithec",
   description:
-    "Decision engines for commerce and service domains—shopping, food delivery, rides, travel, and hospitality. Product: Biome.",
+    "Algorithec builds intelligent decision engines for modern commerce and service platforms. Through our AI product, Biome, we power real-time, context-aware experiences across shopping, food delivery, rides, travel, and hospitality—enabling smarter personalization, recommendations, matching, and operational optimization at scale.",
 };
 
 export default function RootLayout({
